@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* buat table search dan entry */
+table.dataTable thead th,
+table.dataTable tbody td {
+    @apply px-4 py-2 text-sm text-gray-700 border;
+}
+
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter {
+    @apply mb-4 flex items-center gap-2;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    @apply mt-4;
+}
+
+/* buat paggination*/
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.25rem 0.75rem;
+    margin: 0 0.25rem;
+    border-radius: 0.375rem;
+    color: #374151;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #e5e7eb;
+    color: #111827;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #3b82f6;
+    color: #fff;
+    border-color: #3b82f6;
+}
